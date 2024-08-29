@@ -1,0 +1,83 @@
+.nav-link-custom {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-link-custom:hover {
+  color: #fcfaf8;
+  transform: scale(1.1, 1.1) !important;
+}
+
+.nav-link-custom:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: ".";
+  color: transparent;
+  background: #f1c40f;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+.nav-link-custom:hover:after {
+  filter: blur(2px);
+
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.text-success {
+  font-family: "Amarante", serif;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Padding for the entire navbar */
+.custom-nav {
+  padding: 0rem 1rem;
+}
+
+.custom-nav .navbar-brand {
+  font-size: 2.3rem;
+}
+
+/* Style for the nav links */
+.custom-nav .nav-link-custom {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+}
+
+/* Optional: Remove underline on hover */
+.custom-nav .nav-link-custom:hover {
+  text-decoration: none;
+}
