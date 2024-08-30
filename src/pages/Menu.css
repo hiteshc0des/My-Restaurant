@@ -3,3 +3,18 @@
     url(../utils/img/menu-img2.jpg);
   height: 60vh;
 }
+/* 
+@media (max-width: 768px) {
+  .btn-dark {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .btn-dark {
+    padding: 0.3rem 0.8rem;
+    width: 100%;
+    flex-direction: column;
+  }
+} */
